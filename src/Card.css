@@ -1,0 +1,48 @@
+img{
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.card{
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    width: 250px;
+    height: 300px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card:hover .inner{
+    transform: rotateY(180deg);
+}
+.front , .back {
+        box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+}
+.front{
+    background-color: #21421e;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21421e;
+    transform: rotateY(180deg);
+}
+.name{
+    margin-top: 45px;
+}
