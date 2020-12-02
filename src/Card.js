@@ -6,7 +6,7 @@ const Card = ({name,birthday,img,status,nickname,portrayed}) =>{
         <div className="card">
             <div className="inner">
                 <div className="front">
-                    <img src={img}/>
+                    <img src={img} alt={name}/>
                     <h2 className="name">{name}</h2>
                 </div>
                 <div className="back">
