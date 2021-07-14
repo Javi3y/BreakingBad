@@ -27,6 +27,5 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-  }
+  "browserslist": {}
 }
