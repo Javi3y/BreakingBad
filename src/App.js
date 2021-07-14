@@ -26,7 +26,7 @@ class App extends React.Component {
         const filtered = this.state.characters.filter(character =>{
             return character.name.toLowerCase().includes(this.state.searchField.toLowerCase())
         })
-        if(!characters.length){
+        if(!this.state.characters.length){
         	return <h1> Loading </h1>
         }else{
         	return (
